@@ -26,6 +26,8 @@ jobs:
 
       - uses: karniv00l/platformio-run-action@v1
         with:
+          environments: "teensy35,teensy36,teensy41"
+          targets: "teensy35,teensy36,teensy41"
           project-conf: "./platformio_user_env_sample.ini"
           jobs: 6
           silent: false
