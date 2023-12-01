@@ -26,8 +26,8 @@ jobs:
 
       - uses: karniv00l/platformio-run-action@v1
         with:
-          environments: "d1_mini_h1_ota, d1_mini_h2_ota"
-          targets: "d1_mini_h1_ota, d1_mini_h2_ota"
+          environments: "d1_mini_h1_ota"
+          targets: "d1_mini_h1_ota"
           project-conf: "./platformio_user_env_sample.ini"
           jobs: 6
           silent: false
