@@ -24,5 +24,10 @@ jobs:
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
 
-      - name: Build PlatformIO Project
-        run: pio run
+      - uses: karniv00l/platformio-run-action@v1
+        with:
+          project-conf: "./platformio_user_env_sample.ini"
+          jobs: 6
+          silent: false
+          verbose: true
+          disable-auto-clean: false
